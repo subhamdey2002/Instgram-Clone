@@ -1,0 +1,53 @@
+{
+   "posts":[
+        {
+            "user_name" : "Subham dey",
+            "user_Id" : "Subham dey001",
+            "profilepic" : "images/user1.png",
+            "postimg" : "images/post1_img.jpg",
+            "description": " “Happiness is not at the top of the mountains but in how to climb it.”"
+        },
+        {
+            "user_name" : "Manoj O.",
+            "user_Id" : "Manoj002",
+            "profilepic" : "images/user3.png",
+            "postimg" : "images/post2_img.jpg",
+            "description": " “Life was meant for great adventures and close friends.”"
+        },
+        {
+            "user_name" : "yadav_raj_69",
+            "user_Id" : "Rocky003",
+            "profilepic" : "images/raj_dp.jpg",
+            "postimg" : "images/post3_img.jpg",
+            "description": "“Forests are the world's air-conditioning system.”"
+        },
+        {
+            "user_name" : "Jhuma Paul",
+            "user_Id" : "Jhuma004",
+            "profilepic" : "images/user6.png",
+            "postimg" : "images/post4_img.jpg",
+            "description": "What does the fox say?"
+        },        
+        {
+            "user_name" : "Angel Priya",
+            "user_Id" : "Angel004",
+            "profilepic" : "images/user5.jpg",
+            "postimg" : "images/post5_img.jpg",
+            "description": "&#x2764&#x2764&#x2764&#x2764"
+        },        
+        {
+            "user_name" : "Subham dey",
+            "user_Id" : "Subham dey001",
+            "profilepic" : "images/user1.png",
+            "postimg" : "images/post6_img.jpg",
+            "description": "Beautiful Wild...&#x2764&#x2764”"
+        },
+        {
+            "user_name" : "Rajat dey",
+            "user_Id" : "Rajat dey005",
+            "profilepic" : "images/user2.png",
+            "postimg" : "images/post6_img.jpg",
+            "description": "Beautiful Wild...&#x2764&#x2764”"
+        }
+   ]
+}
