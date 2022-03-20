@@ -34,6 +34,10 @@ body {
     /* background-color: red; */
 }
 
+/* .nav {
+   
+} */
+
 
 .navBar {
     height: 45px;
@@ -46,6 +50,12 @@ body {
     background: #7b4397;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #dc2430, #7b4397);
+   
+}
+
+.navBar .fas.fa-camera,
+.navBar > .fab.fa-facebook-messenger{
+    display: none;
 }
 
 .navBar .logo {
@@ -57,7 +67,7 @@ body {
     /* left: 160px; */
 }
 
-.navBar .logo i {
+.navBar i {
     color: #fff;
     font-size: 1.5rem;
     margin-right: 10px;
@@ -357,6 +367,10 @@ body {
     margin: 5px 0px;
 }
 
+.commentSection {
+    display: flex;
+}
+
 .postDetails input {
     width: 90%;
     outline: none;
@@ -556,25 +570,74 @@ body {
         display: none;
     } */
 
-    .commentSection {
-        display: flex;
-    }
+
 }
 
 @media screen and (max-width : 700px) {
     .navBar .searchBox {
         display: none;
     }
+
+    .navBar > .logo {
+        margin: 0;
+    }
 }
 
 @media  screen and (max-width : 580px) {
 
     body {
-        min-width: 500px;
+        min-width: 450px;
+    }
+
+    .fab.fa-instagram {
+        display: none;
+    }
+
+    .navBar .fas.fa-camera,
+    .navBar > .fab.fa-facebook-messenger{
+    display: block;
+    margin-inline: 15px;
+    }
+
+    /* .navBar > .logo {
+        margin: 0;
+    } */
+
+    .navBar {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .mainContainer{
+        width: 520px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .mainContainer .stories,
     .mainContainer .feed {
         width: 95%;
+        margin-inline: none;
+    }
+
+    .navIcons {
+        display: none;
+    }
+}
+
+@media screen and (min-width : 1800px) {
+
+    .nav {
+        background: #7b4397;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #dc2430, #7b4397);
+        display: flex;
+        justify-content: center;
+    }
+
+    .navBar {
+        max-width: 1800px;
+        background: transparent;
     }
 }
