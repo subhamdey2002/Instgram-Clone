@@ -22,6 +22,7 @@ body {
     background: #F0F0F0;
     width: 100vw;
     overflow-x: hidden ;
+    position: relative;
     /* max-width: 1200px; */
 }
 
@@ -34,22 +35,29 @@ body {
     /* background-color: red; */
 }
 
-/* .nav {
-   
-} */
+.nav {
+   background: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   position: fixed;
+   top: 0px;
+   width: 100%;
+   z-index: 1000;
+}
 
 
 .navBar {
     height: 45px;
-    position: relative;
+    /* position: fixed; */
+    /* top: 0px; */
     width: 100%;
-    /* max-width: 1200px; */
+    max-width: 920px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    background: #7b4397;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #dc2430, #7b4397);
+    justify-content: space-between;
+    background: white;
    
 }
 
@@ -68,7 +76,7 @@ body {
 }
 
 .navBar i {
-    color: #fff;
+    color: #222;
     font-size: 1.5rem;
     margin-right: 10px;
 }
@@ -99,6 +107,7 @@ body {
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
     padding: 10px 10px;
+    background: #eee;
 }
 
 .navBar .navIcons {
@@ -112,23 +121,20 @@ body {
 }
 
 .navBar .navIcons .Icons li {
-    margin: 0px 15px;
+    margin: 0px 5px;
     font-size: 1.5rem;
     cursor: pointer;
+    color: black;
 }
 
 .mainContainer {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* background-color: red; */
-    /* display: none; */
     position: relative;
-    /* height: 400px; */
-    /* width: 75%; */
+    top: 50px;
     width: 920px;
-    /* margin: 10px auto; */
-    /* background-color: wheat; */
+}
+
+.mainContainer .leftcontainer {
+    display: flex;
 }
 
 .mainContainer.blured {
@@ -188,9 +194,9 @@ body {
     position: absolute;
     top: 140px;
     left: 20px;
-    /* background-color: red; */
     font: 400;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 
 .main .popup .Counts {
@@ -217,10 +223,6 @@ body {
     font-size: 2.0rem;
 }
 
-.userId:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 .stories {
     width: 60%;
@@ -228,17 +230,15 @@ body {
     position: absolute;
     top: 20px;
     margin: 0px 20px;
-    background-color: rgb(255, 255, 255);
-}
-
-.stories {
     display: flex;
     align-items: center;
     overflow-x: auto;
     overflow-y: hidden;
     border: none;
     border-radius: 6px;
+    background-color: rgb(255, 255, 255);
 }
+
 
 .storydiv{
     position: relative;
@@ -248,6 +248,7 @@ body {
 .stories .story img {
     width: 100%;
     height: 100%;
+    border-radius: inherit;
     object-fit: contain;
 }
 .stories .story {
@@ -257,10 +258,9 @@ body {
     width: 60px;
     height: 60px;
     overflow: hidden;
-    border: 2px solid #c705f2;
     /* outline: 2px solid #c705f2; */
     border-radius: 50%;
-    background-color: whitesmoke;
+    background: radial-gradient(circle farthest-corner at 35% 90%, #df64fe, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 }
 
 .storydiv .userId {
@@ -357,6 +357,7 @@ body {
 
 .post .userId {
     font-weight: bold;
+    cursor: pointer;
 }
 
 .post .likes_count {
@@ -397,11 +398,11 @@ body {
 .mainContainer .activities {
     display: block;
     height: 100%;
-    width: 33%;
-    /* background-color: white; */
+    width: 310px;
     position: absolute;
-    top: 20px;
-    right: 0px;
+    top: 0;
+    right: 0;
+    /* position: fixed; */
     margin : 0px 20px;
     border: none;
     border-radius: 6px;
@@ -513,14 +514,14 @@ body {
     display: block;
     position: absolute;
     font-size: 1.0rem;
-    top: 8px;
+    top: 0px;
     left: 65px;
 }
 
 .suggestions .suggestion-Item  .userName {
     display: block;
     position: absolute;
-    top: 25px;
+    top: 18px;
     font-size: 0.9rem;
     left: 65px;
 }
@@ -528,7 +529,7 @@ body {
 .suggestions  .suggestion-Item button {
     display: block;
     position: absolute;
-    top: 12px;
+    top: 2px;
     right: 20px;
     border: none;
     border-radius: 6px;
@@ -538,6 +539,12 @@ body {
     font-family: 'Outfit';
     font-weight: bold;
     background-color: inherit;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.suggestions  .suggestion-Item button:hover{
+    font-size: 0.9rem;
 }
 
 @media all and (max-width :  1000px ) {
@@ -561,14 +568,22 @@ body {
         display: none;
     }
 
-    /* .navBar {
-        justify-content: space-around;
+}
 
-    } */
+@media screen and (max-width : 650px) {
 
-    /* .navBar .searchBox {
+    .navBar {
+        margin: 0px 20px;
+        justify-content: space-between;
+    }
+
+    .navBar .searchBox {
         display: none;
-    } */
+    }
+
+    .navBar > .logo {
+        margin: 0;
+    }
 
 
 }
@@ -616,28 +631,3 @@ body {
     }
 }
 
-@media screen and (max-width : 700px) {
-    .navBar .searchBox {
-        display: none;
-    }
-
-    .navBar > .logo {
-        margin: 0;
-    }
-}
-
-@media screen and (min-width : 1800px) {
-
-    .nav {
-        background: #7b4397;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #dc2430, #7b4397);
-        display: flex;
-        justify-content: center;
-    }
-
-    .navBar {
-        max-width: 1800px;
-        background: transparent;
-    }
-}
