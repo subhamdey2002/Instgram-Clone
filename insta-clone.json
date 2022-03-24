@@ -3,51 +3,128 @@
         {
             "user_name" : "Subham dey",
             "user_Id" : "Subham dey001",
-            "profilepic" : "images/user1.png",
+            "profilepic" : "images/user1.webp",
             "postimg" : "images/post1_img.jpg",
-            "description": " “Happiness is not at the top of the mountains but in how to climb it.”"
+            "description": " “Happiness is not at the top of the mountains but in how to climb it.”",
+            "likes": 122,
+            "post_time":"12"
         },
         {
             "user_name" : "Manoj O.",
             "user_Id" : "Manoj002",
-            "profilepic" : "images/user3.png",
+            "profilepic" : "images/user2.jpeg",
             "postimg" : "images/post2_img.jpg",
-            "description": " “Life was meant for great adventures and close friends.”"
+            "description": " “Life was meant for great adventures and close friends.”",
+            "likes": 140,
+            "post_time":"46"
         },
         {
-            "user_name" : "yadav_raj_69",
-            "user_Id" : "Rocky003",
+            "user_name" : "Raj Yadav",
+            "user_Id" : "yadav_raj_69",
             "profilepic" : "images/raj_dp.jpg",
             "postimg" : "images/post3_img.jpg",
-            "description": "“Forests are the world's air-conditioning system.”"
+            "description": "“Forests are the world's air-conditioning system.”",
+            "likes": 80,
+            "post_time":"65"
         },
         {
             "user_name" : "Jhuma Paul",
             "user_Id" : "Jhuma004",
-            "profilepic" : "images/user6.png",
+            "profilepic" : "images/user6.webp",
             "postimg" : "images/post4_img.jpg",
-            "description": "What does the fox say?"
+            "description": "What does the fox say?",
+            "likes": 209,
+            "post_time":"71"
         },        
         {
-            "user_name" : "Angel Priya",
+            "user_name" : "Priya kumari",
             "user_Id" : "Angel004",
-            "profilepic" : "images/user5.jpg",
+            "profilepic" : "images/user5.webp",
             "postimg" : "images/post5_img.jpg",
-            "description": "&#x2764&#x2764&#x2764&#x2764"
+            "description": "&#x2764&#x2764&#x2764&#x2764",
+            "likes": 190,
+            "post_time":"90"
         },        
         {
-            "user_name" : "Subham dey",
-            "user_Id" : "Subham dey001",
-            "profilepic" : "images/user1.png",
+            "user_name" : "Rahul Dua",
+            "user_Id" : "Danger_Dua",
+            "profilepic" : "images/user7.jpeg",
             "postimg" : "images/post6_img.jpg",
-            "description": "Beautiful Wild...&#x2764&#x2764”"
+            "description": "Beautiful Wild...&#x2764&#x2764",
+            "likes": 320,
+            "post_time":"140"
         },
         {
-            "user_name" : "Rajat dey",
-            "user_Id" : "Rajat dey005",
-            "profilepic" : "images/user2.png",
-            "postimg" : "images/post6_img.jpg",
-            "description": "Beautiful Wild...&#x2764&#x2764”"
+            "user_name" : "Vishal karmakar",
+            "user_Id" : "I_am_Vicky",
+            "profilepic" : "images/user4.webp",
+            "postimg" : "images/post7_img.jpg",
+            "description": "NO CAPTION",
+            "likes": 143,
+            "post_time":"124"
+        },
+        {
+            "user_name" : "Manohar Batra",
+            "user_Id" : "Manohar_Batra",
+            "profilepic" : "images/user16.jpg",
+            "postimg" : "images/post8_img.jpg",
+            "description": "Being kidish!!",
+            "likes": 567,
+            "post_time":"135"
         }
+
+   ],
+
+   "suggetions":[                                                                                                                                                                                                                   
+    {
+        "user_name" : "Supriya kumari",
+        "user_Id" : "superRIA",
+        "profilepic" : "images/user15.jpeg"
+    },
+    {
+        "user_name" : "Rajnish Pandey",
+        "user_Id" : "Rajnesh101",
+        "profilepic" : "images/user14.jpg"
+    },
+    {
+        "user_name" : "Yashraj Kubhkar",
+        "user_Id" : "YashRAJ_Arts",
+        "profilepic" : "images/user13.jpg"
+    },
+    {
+        "user_name" : "Anshu Rajpoot",
+        "user_Id" : "Rajpoot_Anshu",
+        "profilepic" : "images/user12.jpg"
+    },
+    {
+        "user_name" : "Priyanka Banerjee",
+        "user_Id" : "PriyankaB.",
+        "profilepic" : "images/user11.jpg"
+    },
+    {
+        "user_name" : "Josef pol",
+        "user_Id" : "JOSEF",
+        "profilepic" : "images/user10.jpg"
+    },
+    {
+        "user_name" : "Andrew Meghan",
+        "user_Id" : "Meghan_Andrew",
+        "profilepic" : "images/user9.jpg"
+    },
+    {
+        "user_name" : "Supriya kumari",
+        "user_Id" : "superRIA",
+        "profilepic" : "images/user15.jpeg"
+    },
+    {
+        "user_name" : "Supriya kumari",
+        "user_Id" : "superRIA",
+        "profilepic" : "images/user15.jpeg"
+    },
+    {
+        "user_name" : "Supriya kumari",
+        "user_Id" : "superRIA",
+        "profilepic" : "images/user15.jpeg"
+    }
    ]
 }
