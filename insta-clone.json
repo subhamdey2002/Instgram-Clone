@@ -7,7 +7,9 @@
             "postimg" : "images/post1_img.jpg",
             "description": " “Happiness is not at the top of the mountains but in how to climb it.”",
             "likes": 122,
-            "post_time":"12"
+            "newlikes" : 123,
+            "post_time":"12",
+            "saved": false
         },
         {
             "user_name" : "Manoj O.",
@@ -16,7 +18,8 @@
             "postimg" : "images/post2_img.jpg",
             "description": " “Life was meant for great adventures and close friends.”",
             "likes": 140,
-            "post_time":"46"
+            "post_time":"46",
+            "saved": false
         },
         {
             "user_name" : "Raj Yadav",
@@ -25,7 +28,8 @@
             "postimg" : "images/post3_img.jpg",
             "description": "“Forests are the world's air-conditioning system.”",
             "likes": 80,
-            "post_time":"65"
+            "post_time":"65",
+            "saved": false
         },
         {
             "user_name" : "Jhuma Paul",
@@ -34,7 +38,8 @@
             "postimg" : "images/post4_img.jpg",
             "description": "What does the fox say?",
             "likes": 209,
-            "post_time":"71"
+            "post_time":"71",
+            "saved": false
         },        
         {
             "user_name" : "Priya kumari",
@@ -43,7 +48,8 @@
             "postimg" : "images/post5_img.jpg",
             "description": "&#x2764&#x2764&#x2764&#x2764",
             "likes": 190,
-            "post_time":"90"
+            "post_time":"90",
+            "saved": false
         },        
         {
             "user_name" : "Rahul Dua",
@@ -52,7 +58,8 @@
             "postimg" : "images/post6_img.jpg",
             "description": "Beautiful Wild...&#x2764&#x2764",
             "likes": 320,
-            "post_time":"140"
+            "post_time":"140",
+            "saved": false
         },
         {
             "user_name" : "Vishal karmakar",
@@ -61,7 +68,8 @@
             "postimg" : "images/post7_img.jpg",
             "description": "NO CAPTION",
             "likes": 143,
-            "post_time":"124"
+            "post_time":"124",
+            "saved": false
         },
         {
             "user_name" : "Manohar Batra",
@@ -69,8 +77,9 @@
             "profilepic" : "images/user16.jpg",
             "postimg" : "images/post8_img.jpg",
             "description": "Being kidish!!",
-            "likes": 567,
-            "post_time":"135"
+            "likes": 399,
+            "post_time":"135",
+            "saved": false
         }
 
    ],
