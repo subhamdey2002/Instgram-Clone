@@ -149,9 +149,9 @@ body {
 }
 
 .main .popup {
-    width: calc(90% - 10px);
-    max-width: 600px;
-    min-width: 440px;
+    width: calc(100% - 40px);
+    max-width: 450px;
+    min-width: 350px;
     height: 550px;
     position: fixed;
     top: 60px;
