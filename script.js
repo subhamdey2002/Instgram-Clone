@@ -1,28 +1,9 @@
 let feed_div = document.getElementById("feed");
-const user = document.getElementsByClassName("userId");
 const mainContainer = document.getElementById("mainContainer");
 let suggestionList = document.getElementById("suggestionList");
 const ProfileDiv = document.getElementById("popup");
 
-console.log(feed);
-
-
-Array.from(user).forEach(element => {
-    element.addEventListener('click', () => {
-        popup.classList.remove("hidden");
-        mainContainer.classList.add("blured");
-
-        const PopupBtn = document.getElementById("popup-close");
-
-        PopupBtn.addEventListener('click', () => {
-            popup.classList.add("hidden");
-            mainContainer.classList.remove("blured");
-        })
-    })
-});
-
-
-
+// console.log(feed);
 
 fetch("insta-clone.json")
     .then(response => response.json())
@@ -48,7 +29,7 @@ fetch("insta-clone.json")
                         <li class="save"><i class="far fa-bookmark"></i></li>
                     </ul>
                 </section>
-                <p class="likes_count">634 likes</p>
+                <p class="likes_count"><span id="like_count"></span><span> likes</span></p>
                 <div class="postDetails">
                     <p>
                         <span class="userId">&nbsp;</span>
@@ -71,23 +52,23 @@ fetch("insta-clone.json")
             feed_div.innerHTML += post_div;
             const post_arr = feed_div.querySelectorAll(".post");
             const element = post_arr[index];
-            console.log(element)
+            // console.log(element)
 
             element.children[0].children[0].children[0].setAttribute("src", `${data.posts[index].profilepic}`)
             element.children[0].children[1].innerHTML = `${data.posts[index].user_Id}`
             element.children[4].children[0].children[0].innerHTML = `${data.posts[index].user_name}`
             element.children[1].children[0].setAttribute("src", `${data.posts[index].postimg}`)
-            element.children[3].innerHTML = `${data.posts[index].likes}` + " likes"
+            element.children[3].children[0].innerHTML = `${data.posts[index].likes}`;
             element.children[4].children[0].children[1].innerHTML = `${data.posts[index].description}`
 
             let posttime = `${data.posts[index].post_time}`
 
-            if(posttime >= 60 ) {
-                posttime = Math.floor(posttime/60);
+            if (posttime >= 60) {
+                posttime = Math.floor(posttime / 60);
                 element.children[4].children[2].innerHTML = posttime + " hours ago"
             }
-            else{
-                element.children[4].children[2].innerHTML = posttime + " minutes ago"                
+            else {
+                element.children[4].children[2].innerHTML = posttime + " minutes ago"
             }
         }
 
@@ -124,27 +105,76 @@ fetch("insta-clone.json")
                 if (element.children[0].classList.contains("far")) {
                     element.children[0].classList.remove("far")
                     element.children[0].classList.add("fas")
+                    element.children[0].classList.add("liked")
+                    likes_counter();
                 }
                 else {
                     element.children[0].classList.remove("fas")
+                    element.children[0].classList.remove("liked")
                     element.children[0].classList.add("far")
+                    likes_counter();
                 }
             })
         });
-        
+
         const saveBtns = document.querySelectorAll(".save");
         saveBtns.forEach(element => {
             element.addEventListener('click', (e) => {
                 if (element.children[0].classList.contains("far")) {
                     element.children[0].classList.remove("far")
                     element.children[0].classList.add("fas")
+                    savePost(saved_posts, element.parentNode.parentNode.parentNode);
                 }
                 else {
                     element.children[0].classList.remove("fas")
                     element.children[0].classList.add("far")
+                    saved_posts = UnsavePost(saved_posts, element.parentNode.parentNode.parentNode);
                 }
             })
         });
 
+        const user = document.getElementsByClassName("userId");
+        Array.from(user).forEach(element => {
+            element.addEventListener('click', () => {
+                popup.classList.remove("hidden");
+                mainContainer.classList.add("blured");
+
+                const PopupBtn = document.getElementById("popup-close");
+
+                PopupBtn.addEventListener('click', () => {
+                    popup.classList.add("hidden");
+                    mainContainer.classList.remove("blured");
+                })
+            })
+        });
+
+        saved_posts = [];
+        function savePost(saved_posts, index) {
+           saved_posts.push(index);
+        }
+
+        function UnsavePost(saved_posts, index) {
+            return saved_posts.filter(function(ele) {
+                return ele != index;
+            });
+        }
+
+        function likes_counter() 
+        {  postArr = feed_div.children;
+          
+          for (let index = 0; index < postArr.length; index++) {
+              const element = postArr[index];
+              if( element.children[2].children[0].children[0].children[0].classList.contains("liked") ) {
+                  element.children[3].children[0].innerHTML = Number(`${data.posts[index].likes}`) + 1;
+              }
+              else {
+                element.children[3].children[0].innerHTML = Number(`${data.posts[index].likes}`);
+              }
+          }
+      }
+
     })
+
+
+
 
