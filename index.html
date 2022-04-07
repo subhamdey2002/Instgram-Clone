@@ -47,80 +47,80 @@
 
     <div class="main">
         <div class="mainContainer" id="mainContainer">
-                <!-- <div class="leftcontainer"> -->
+            <div class="leftcontainer">
                 <div class="stories">
-                <div class="storydiv">
-                    <div class="story">
-                        <img src="images/user1.webp" alt="user1-profile-pic">
+                    <div class="storydiv">
+                        <div class="story">
+                            <img src="images/user1.webp" alt="user1-profile-pic">
+                        </div>
+                        <span class="userId">user1</span>
                     </div>
-                    <span class="userId">user1</span>
-                </div>
-                <div class="storydiv">
-                    <div class="story">
-                        <img src="images/user2.jpeg" alt="user2-profile-pic">
+                    <div class="storydiv">
+                        <div class="story">
+                            <img src="images/user2.jpeg" alt="user2-profile-pic">
+                        </div>
+                        <span class="userId">user2</span>
                     </div>
-                    <span class="userId">user2</span>
-                </div>
-                <div class="storydiv">
-                    <div class="story">
-                        <img src="images/user3.webp" alt="user3-profile-pic">
+                    <div class="storydiv">
+                        <div class="story">
+                            <img src="images/user3.webp" alt="user3-profile-pic">
+                        </div>
+                        <span class="userId">user3</span>
                     </div>
-                    <span class="userId">user3</span>
-                </div>
-                <div class="storydiv">
-                    <div class="story">
-                        <img src="images/user4.webp" alt="user4-profile-pic">
+                    <div class="storydiv">
+                        <div class="story">
+                            <img src="images/user4.webp" alt="user4-profile-pic">
+                        </div>
+                        <span class="userId">user4</span>
                     </div>
-                    <span class="userId">user4</span>
-                </div>
-                <div class="storydiv">
-                    <div class="story">
-                        <img src="images/user5.webp" alt="user5-profile-pic">
+                    <div class="storydiv">
+                        <div class="story">
+                            <img src="images/user5.webp" alt="user5-profile-pic">
+                        </div>
+                        <span class="userId">user5</span>
                     </div>
-                    <span class="userId">user5</span>
-                </div>
-                <div class="storydiv">
-                    <div class="story">
-                        <img src="images/user6.webp" alt="user6-profile-pic">
+                    <div class="storydiv">
+                        <div class="story">
+                            <img src="images/user6.webp" alt="user6-profile-pic">
+                        </div>
+                        <span class="userId">user6</span>
                     </div>
-                    <span class="userId">user6</span>
-                </div>
-                <div class="storydiv">
-                    <div class="story">
-                        <img src="images/user7.jpeg" alt="user2-profile-pic">
+                    <div class="storydiv">
+                        <div class="story">
+                            <img src="images/user7.jpeg" alt="user2-profile-pic">
+                        </div>
+                        <span class="userId">user2</span>
                     </div>
-                    <span class="userId">user2</span>
-                </div>
-                <div class="storydiv">
-                    <div class="story">
-                        <img src="images/user8.jpeg" alt="user2-profile-pic">
+                    <div class="storydiv">
+                        <div class="story">
+                            <img src="images/user8.jpeg" alt="user2-profile-pic">
+                        </div>
+                        <span class="userId">user2</span>
                     </div>
-                    <span class="userId">user2</span>
-                </div>
-                <div class="storydiv">
-                    <div class="story">
-                        <img src="images/user9.jpg" alt="user2-profile-pic">
+                    <div class="storydiv">
+                        <div class="story">
+                            <img src="images/user9.jpg" alt="user2-profile-pic">
+                        </div>
+                        <span class="userId">user2</span>
                     </div>
-                    <span class="userId">user2</span>
-                </div>
-                <div class="storydiv">
-                    <div class="story">
-                        <img src="images/user10.jpg" alt="user2-profile-pic">
+                    <div class="storydiv">
+                        <div class="story">
+                            <img src="images/user10.jpg" alt="user2-profile-pic">
+                        </div>
+                        <span class="userId">user2</span>
                     </div>
-                    <span class="userId">user2</span>
-                </div>
-                <div class="storydiv">
-                    <div class="story">
-                        <img src="images/user11.jpg" alt="user2-profile-pic">
+                    <div class="storydiv">
+                        <div class="story">
+                            <img src="images/user11.jpg" alt="user2-profile-pic">
+                        </div>
+                        <span class="userId">user2</span>
                     </div>
-                    <span class="userId">user2</span>
-                </div>
                 </div>
 
                 <div class="feed" id="feed">
-                 <!-- popullated using JS -->
+                    <!-- popullated using JS -->
                 </div>
-                <!-- </div> -->
+            </div>
             <div class="activities">
                 <div class="profile">
                     <div class="profilepic">
@@ -130,39 +130,69 @@
                     <span class="userName">UserName</span>
                     <button>Switch</button>
                 </div>
-    
+
                 <div class="suggestions">
                     <p class="suggestion_tag">Suggestions For You</p>
                     <div class="suggestionList" id="suggestionList">
                         <!-- popullated using JS -->
                     </div>
                 </div>
+
+                <div class="other-tags">
+                    <p>About .Help .PressAPI .Jobs .PrivacyTerms .Locations .Top <br>  .Accounts .Hashtags .Language
+                        English
+                        </p>
+                        <p class="Owner_tag">@ InstaClone by Subham Dey</p>
+                </div>
             </div>
         </div>
 
         <div class="popup hidden" id="popup">
-            <i class="far fa-times-circle" id="popup-close"></i>
+            <i class="far fa-times-circle popup-close" id="popup-close"></i>
 
-            <div class="ProfilePic">
-                <img src="images/user2.png" alt="profilePicture">
+            <div class="profileHeader">
+                <div class="profile-pic-name">
+                    <img src="images/user1.webp" alt="">
+                    <!-- <span class="userName">User Name</span> -->
+                </div>
+                <div class="follower-follow-post">
+                    <div class="userCredentials">
+                        <span class="followers-count">456</span>
+                        <span>Followers</span>
+                    </div>
+                    <div class="userCredentials">
+                        <span class="follows-count">876</span>
+                        <span>Follows</span>
+                    </div>
+                    <div class="userCredentials">
+                        <span class="post-count">145</span>
+                        <span>Posts</span>
+                    </div>
+                </div>
             </div>
-            <span class="userId">Subham Dey</span>
 
-            <div class="Counts">
-                <div class="postCount userCredentials">
-                    <span class="count">134</span>
-                    <span class="Tagname">Posts</span>
-                </div>
+            <div class="profile-description">
 
-                <div class="followersCount userCredentials">
-                    <span class="count">1863</span>
-                    <span class="Tagname">Followers</span>
-                </div>
-
-                <div class="followCount userCredentials">
-                    <span class="count">80</span>
-                    <span class="Tagname">Follows</span>
-                </div>
+                <ul>
+                    <li>
+                        <span class="userName">User Name</span>
+                    </li>
+                    <li>
+                        Actor
+                    </li>
+                    <li>
+                        Animal lover
+                    </li>
+                    <li>
+                        World Travellor
+                    </li>
+                    <li>
+                        Emial: sd918782@gmail.com
+                    </li>
+                    <li>
+                        linkin: Subham_dey@demoID
+                    </li>
+                </ul>                
             </div>
         </div>
 
