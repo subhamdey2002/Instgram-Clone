@@ -128,13 +128,20 @@ body {
 }
 
 .mainContainer {
-    position: relative;
-    top: 50px;
+    /* position: relative; */
+    position: fixed;
+    top: 40px;
     width: 920px;
+    margin-top: 20px;
 }
 
 .mainContainer .leftcontainer {
-    display: flex;
+    /* display: flex; */
+    position: absolute;
+    width: inherit;
+    height: 90vh;
+    overflow-x: auto;
+    overflow-y: scroll;
 }
 
 .mainContainer.blured {
@@ -142,14 +149,14 @@ body {
 }
 
 .main .popup {
-    width: 500px;
+    width: calc(90% - 10px);
+    max-width: 600px;
+    min-width: 440px;
     height: 550px;
     position: fixed;
     top: 60px;
     background-color: white;
-    /* background-color: green; */
     margin: 0px auto;
-    border: none;
     border-radius: 10px;
     box-shadow: 10px 10px 15px #999;
 }
@@ -167,60 +174,60 @@ body {
     transition: all 0.2s ease;
 }
 
-.main .popup .fa-times-circle:hover{
+.main .popup .popup-close:hover{
     cursor: pointer;
     color: black;
 }
 
-.main .popup .ProfilePic {
-    width: 100px;
+.main .popup .profileHeader {
+    /* background: red; */
+    width: 100%;
     height: 100px;
-    border: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 20px;
+}
+
+.main .popup .profileHeader .profile-pic-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    /* border: 1px solid green; */
+    /* height: 100px; */
+    /* background: #000; */
+}
+.main .popup .profileHeader .profile-pic-name .userName {
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.main .popup .profileHeader .profile-pic-name img {
+    width: 5rem;
     border-radius: 50%;
-    /* background-color: red; */
-    overflow: hidden;
-    position: absolute;
-    top: 35px;
-    left: 20px;
 }
 
-.main .popup .ProfilePic img {
-    width: inherit;
-    object-fit: contain;
-    height: inherit;
+.main .popup .profileHeader .follower-follow-post {
+    width: 60%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.main .popup .userId {
-    position: absolute;
-    top: 140px;
-    left: 20px;
-    font: 400;
-    font-size: 1.3rem;
-    cursor: pointer;
-}
-
-.main .popup .Counts {
-    position: absolute;
-    top: 60px;
-    left: 140px;
-}
-
-.main .popup .userCredentials {
-    display: inline-block;
-    margin: 0px 30px;
-    display: inline-flex;
+.main .popup .profileHeader .follower-follow-post .userCredentials {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-/* .main .popup .postCount {
-    width: 80px;
-    left: 150px;
-} */
-
-.main .popup .count {
-    font-size: 2.0rem;
+.main .popup .profile-description {
+    position: absolute;
+    top: 120px;
+    margin: 5px 20px;
+    color: #222;
 }
 
 
@@ -235,7 +242,7 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     border: none;
-    border-radius: 6px;
+    border-radius: 4px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -259,6 +266,7 @@ body {
     height: 60px;
     overflow: hidden;
     /* outline: 2px solid #c705f2; */
+    /* border: 2px solid red; */
     border-radius: 50%;
     background: radial-gradient(circle farthest-corner at 35% 90%, #df64fe, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 }
@@ -284,11 +292,12 @@ body {
 
 
 .feed .post {
-    height: auto;
+    height: fit-content;
     width: 100%;
     background-color: whitesmoke;
     margin: 10px 0px;
     border: 1px solid grey;
+    border-radius: 4px;
     overflow: hidden;
 }
 
@@ -403,7 +412,7 @@ body {
     top: 0;
     right: 0;
     /* position: fixed; */
-    margin : 0px 20px;
+    margin : 10px 20px;
     border: none;
     border-radius: 6px;
 }
@@ -547,15 +556,32 @@ body {
     font-size: 0.9rem;
 }
 
+.activities .other-tags {
+    margin-top: 40px;
+    font-size: .76rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.activities .Owner_tag {
+    margin: 20px 0px;
+}
+
+
 @media all and (max-width :  1000px ) {
 
 
     .mainContainer{
         width: 550px;
+        height: inherit;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
+    /* .mainContainer>.leftcontainer {
+        width: inherit;
+    } */
 
      .mainContainer .stories {
         width: 100%;
@@ -571,6 +597,7 @@ body {
 }
 
 @media screen and (max-width : 650px) {
+
 
     .navBar {
         margin: 0px 20px;
@@ -590,8 +617,12 @@ body {
 
 @media  screen and (max-width : 580px) {
 
+    *{
+        margin: 0px;
+    }
+
     body {
-        min-width: 450px;
+        min-width: 100%;
     }
 
     .fab.fa-instagram {
@@ -613,17 +644,38 @@ body {
         width: 100%;
     }
 
+    .main {
+        width: 100%;
+    }
     .mainContainer{
-        width: 520px;
+        margin: 0px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .mainContainer .stories,
+    .mainContainer .leftcontainer {
+        width: 100%;
+    }
+
+    .mainContainer .stories {
+        width: 100%;
+        margin-inline: 0px;
+    }
     .mainContainer .feed {
-        width: 95%;
-        margin-inline: none;
+        width: 100%;
+        margin-inline: 0px;
+    }
+
+    .mainContainer .feed .post {
+        min-width: 450px;
+        min-height: 100px;
+        margin:10px 0px;
+        width: 100%;
+        border: none;
+        height: auto;
+        object-fit: cover;
     }
 
     .navIcons {
