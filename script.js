@@ -81,7 +81,7 @@ fetch("insta-clone.json")
                                     </div>
                                     <span class="userId"></span>
                                     <span class="userName"></span>
-                                    <button>Follow +</button>
+                                    <button class="follow-btn">Follow +</button>
                                 </div>`
 
 
@@ -97,6 +97,22 @@ fetch("insta-clone.json")
             element2.children[1].innerHTML = `${data.suggetions[index2].user_Id}`
             element2.children[2].innerHTML = `${data.suggetions[index2].user_name}`
         }
+
+        const follow_btns = document.querySelectorAll(".follow-btn");
+        
+
+        follow_btns.forEach(element => {
+            element.addEventListener('click', () => {
+               element.classList.toggle("true");
+
+               if(element.classList.contains("true")) {
+                   element.innerText = `Unfollow -`;
+               }
+               else {
+                    element.innerText = `Follow +`;
+               }
+            })
+        });
 
 
         const likeBtns = document.querySelectorAll(".like");
@@ -134,15 +150,92 @@ fetch("insta-clone.json")
         });
 
         const user = document.getElementsByClassName("userId");
+        const popup = document.getElementById("popup");
+
         Array.from(user).forEach(element => {
             element.addEventListener('click', () => {
                 popup.classList.remove("hidden");
+
+                let index = data.users.findIndex( function(object){
+                    // console.log();
+                    return object.userId === element.innerText;
+                });
+                console.log(index)
+                if(index === -1) {
+                    popup.innerHTML = `<i class="far fa-times-circle popup-close" id="popup-close"></i><span>No Details Avilable about user</span>`;
+                    popup.classList.toggle("empty");
+                }
+                else {
+                popup.innerHTML = `            <i class="far fa-times-circle popup-close" id="popup-close"></i>
+
+                    <div class="profileHeader">
+                        <div class="profile-pic-name">
+                            <img src="${data.users[index].profilePic}" alt="ProfilePictureHere">
+                        </div>
+                        <div class="follower-follow-post">
+                            <div class="userCredentials">
+                                <span class="followers-count">${data.users[index].followers}</span>
+                                <span>Followers</span>
+                            </div>
+                            <div class="userCredentials">
+                                <span class="follows-count">${data.users[index].follows}</span>
+                                <span>Follows</span>
+                            </div>
+                            <div class="userCredentials">
+                                <span class="post-count">${data.users[index].posts}</span>
+                                <span>Posts</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="profile-description">
+        
+                        <ul>
+                            <li>
+                                <span class="userName">${data.users[index].userName}</span>
+                            </li>
+                            <li>
+                                Actor
+                            </li>
+                            <li>
+                                Animal lover
+                            </li>
+                            <li>
+                                World Travellor
+                            </li>
+                            <li>
+                                Emial: sd918782@gmail.com
+                            </li>
+                            <li>
+                                linkin: Subham_dey@demoID
+                            </li>
+                            <li>
+                                <b><center style="margin: 10px 0px 0px 0px">Hover to see enlarged image</center></b>
+                            </li>
+                        </ul> 
+                            <div class="gallary">
+                            </div>
+                    </div>`;
+
+                    let GallaryDiv = popup.getElementsByClassName("gallary")[0];
+                    
+
+
+                        for(let i=0; i<`${data.users[index].PostGallary.length}`; i++) {
+
+                            GallaryDiv.innerHTML += `<img src="${data.users[index].PostGallary[i]}" alt="">`;
+                        }
+
+                    }
+
                 mainContainer.classList.add("blured");
 
                 const PopupBtn = document.getElementById("popup-close");
 
                 PopupBtn.addEventListener('click', () => {
                     popup.classList.add("hidden");
+                    popup.classList.remove("empty");
+                    popup.innerHTML = ``;
                     mainContainer.classList.remove("blured");
                 })
             })
@@ -150,28 +243,28 @@ fetch("insta-clone.json")
 
         saved_posts = [];
         function savePost(saved_posts, index) {
-           saved_posts.push(index);
+            saved_posts.push(index);
         }
 
         function UnsavePost(saved_posts, index) {
-            return saved_posts.filter(function(ele) {
+            return saved_posts.filter(function (ele) {
                 return ele != index;
             });
         }
 
-        function likes_counter() 
-        {  postArr = feed_div.children;
-          
-          for (let index = 0; index < postArr.length; index++) {
-              const element = postArr[index];
-              if( element.children[2].children[0].children[0].children[0].classList.contains("liked") ) {
-                  element.children[3].children[0].innerHTML = Number(`${data.posts[index].likes}`) + 1;
-              }
-              else {
-                element.children[3].children[0].innerHTML = Number(`${data.posts[index].likes}`);
-              }
-          }
-      }
+        function likes_counter() {
+            postArr = feed_div.children;
+
+            for (let index = 0; index < postArr.length; index++) {
+                const element = postArr[index];
+                if (element.children[2].children[0].children[0].children[0].classList.contains("liked")) {
+                    element.children[3].children[0].innerHTML = Number(`${data.posts[index].likes}`) + 1;
+                }
+                else {
+                    element.children[3].children[0].innerHTML = Number(`${data.posts[index].likes}`);
+                }
+            }
+        }
 
     })
 
