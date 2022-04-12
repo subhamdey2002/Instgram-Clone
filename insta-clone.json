@@ -52,8 +52,8 @@
             "saved": false
         },        
         {
-            "user_name" : "Rahul Dua",
-            "user_Id" : "Danger_Dua",
+            "user_name" : "Yash_raj",
+            "user_Id" : "Wild_Yash",
             "profilepic" : "images/user7.jpeg",
             "postimg" : "images/post6_img.jpg",
             "description": "Beautiful Wild...&#x2764&#x2764",
@@ -135,5 +135,80 @@
         "user_Id" : "superRIA",
         "profilepic" : "images/user15.jpeg"
     }
+   ],
+
+   "users": [
+            {
+                "userId":"Subham dey001",
+                "userName": "Subham dey",
+                "profilePic":"images/user1.webp",
+                "followers":"456",
+                "follows":"124",
+                "posts":"9",
+                "PostGallary": [
+                    "images/post7_img.jpg",
+                    "images/post8_img.jpg",
+                    "images/post1_img.jpg",
+                    "images/post2_img.jpg",
+                    "images/post3_img.jpg",
+                    "images/post4_img.jpg",
+                    "images/post5_img.jpg",
+                    "images/post6_img.jpg",
+                    "images/post7_img.jpg"
+                ]
+            },
+            {
+                "userId":"I_am_Vicky",
+                "userName": "Rajat dey",
+                "profilePic":"images/user9.jpg",
+                "followers":"100",
+                "follows":"50",
+                "posts":"9",
+                "PostGallary": [
+                    "images/user1.webp",
+                    "images/user3.webp",
+                    "images/user4.webp",
+                    "images/user5.webp",
+                    "images/user6.webp",
+                    "images/user7.jpeg",
+                    "images/user8.jpeg",
+                    "images/user9.jpg",
+                    "images/user10.jpg"
+                ]
+            },
+            {
+                "userId":"Wild_Yash",
+                "userName": "Yashraj Kumbhkar",
+                "profilePic":"images/user7.jpeg",
+                "followers":"349",
+                "follows":"345",
+                "posts":"7",
+                "PostGallary": [
+                    "images/lama.webp",
+                    "images/elephant.webp",
+                    "images/lioness.webp",
+                    "images/humming_bird.webp",
+                    "images/fox.webp",
+                    "images/crans.webp",
+                    "images/post6_img.jpg"
+                ]
+            },
+            {
+                "userId":"Jhuma004",
+                "userName": "Jhumma Paul",
+                "profilePic":"images/user6.webp",
+                "followers":"349",
+                "follows":"345",
+                "posts":"7",
+                "PostGallary": [
+                    "images/lama.webp",
+                    "images/elephant.webp",
+                    "images/lioness.webp",
+                    "images/humming_bird.webp",
+                    "images/fox.webp",
+                    "images/crans.webp",
+                    "images/post6_img.jpg"
+                ]
+            }
    ]
 }
