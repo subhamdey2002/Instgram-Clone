@@ -138,7 +138,7 @@ body {
 .mainContainer .leftcontainer {
     /* display: flex; */
     position: absolute;
-    width: 100%;
+    width: 105%;
     height: 90vh;
     overflow-x: auto;
     overflow-y: scroll;
@@ -159,10 +159,40 @@ body {
     margin: 0px auto;
     border-radius: 10px;
     box-shadow: 10px 10px 15px #999;
+    overflow-x: hidden;
+    overflow-y: scroll ;
 }
+
+.main .popup .gallary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.main .popup .gallary img {
+    width: calc((100% / 3) - 4px );
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 2px 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.main .popup .gallary img:hover {
+    transform: scale(1.5);
+    border-radius: 6px;
+    z-index: 100;
+}
+
 
 .main .popup.hidden {
     display: none;
+}
+
+.main .popup.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main .popup .fa-times-circle {
@@ -170,8 +200,8 @@ body {
     top: 10px;
     right: 10px;
     color: #898988;
-    font-size: 1.5rem;
-    transition: all 0.2s ease;
+    font-size: 1.75rem;
+    transition: all 0.05s linear;
 }
 
 .main .popup .popup-close:hover{
@@ -194,6 +224,8 @@ body {
     flex-direction: column;
     align-items: center;
     width: 30%;
+    object-fit: cover;
+
     /* border: 1px solid green; */
     /* height: 100px; */
     /* background: #000; */
@@ -221,6 +253,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 0px 5px;
 }
 
 .main .popup .profile-description {
@@ -237,6 +272,7 @@ body {
     position: absolute;
     top: 20px;
     margin: 0px 20px;
+    padding-bottom: 6px;
     display: flex;
     align-items: center;
     overflow-x: auto;
@@ -417,7 +453,7 @@ body {
     top: 0;
     right: 0;
     /* position: fixed; */
-    margin : 10px 20px;
+    margin : 10px 0px;
     border: none;
     border-radius: 6px;
 }
@@ -506,6 +542,7 @@ body {
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0px 10px ;
     margin-top: 10px;
     font-family: 'Outfit','san serif';
@@ -532,6 +569,10 @@ body {
     left: 65px;
 }
 
+.userId{
+    cursor: pointer;
+}
+
 .suggestions .suggestion-Item  .userName {
     display: block;
     position: absolute;
@@ -542,7 +583,6 @@ body {
 
 .suggestions  .suggestion-Item button {
     display: block;
-    position: absolute;
     top: 2px;
     right: 20px;
     border: none;
@@ -567,6 +607,7 @@ body {
     color: #555;
     cursor: pointer;
 }
+
 
 .activities .Owner_tag {
     margin: 20px 0px;
