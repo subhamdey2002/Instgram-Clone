@@ -7,43 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/49e764df9c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
     <link rel="icon"
-    href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png"
-    type="image/x-icon">
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png"
+        type="image/x-icon">
     <title>Instgram-Clone/User Profile</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup {
+            position: relative !important;
+            top: 0px !important;
+        }
+    </style>
+
 </head>
 
 <body>
 
-            <div class="nav">
-                <nav class="navBar">
-        
-                    <i class="fas fa-camera"></i>
-        
-                    <div class="logo">
-                        <a href="index.html"><i class="fab fa-instagram"></i></a>
-                        <img src="images/instaclone-logo-dark.png" alt="brand-png">
-                    </div>
-        
-                    <i class="fab fa-facebook-messenger"></i>
-        
-                    <div class="searchBox">
-                        <input type="text" placeholder="Search...">
-                        <i class="fas fa-search"></i>
-                    </div>
-        
-                    <div class="navIcons">
-                        <ul class="Icons">
-                            <li><i class="fas fa-home home"></i></li>
-                            <li><i class="fab fa-facebook-messenger messenger"></i></li>
-                            <li><i class="fas fa-plus-square addpost"></i></li>
-                            <li><i class="fas fa-heart fav"></i></li>
-                            <a href="index2.html"><li><i class="fas fa-user"></i></li></a>
-                        </ul>
-                    </div>
-                </nav>
+    <div class="nav">
+        <nav class="navBar">
+
+            <i class="fas fa-camera"></i>
+
+            <div class="logo">
+                <a href="index.html"><i class="fab fa-instagram"></i></a>
+                <img src="images/instaclone-logo-dark.png" alt="brand-png">
             </div>
+
+            <i class="fab fa-facebook-messenger"></i>
+
+            <div class="searchBox">
+                <input type="text" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="navIcons">
+                <ul class="Icons">
+                    <li><i class="fas fa-home home"></i></li>
+                    <li><i class="fab fa-facebook-messenger messenger"></i></li>
+                    <li><i class="fas fa-plus-square addpost"></i></li>
+                    <li><i class="fas fa-heart fav"></i></li>
+                    <a href="index2.html">
+                        <li><i class="fas fa-user"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
     <div class="main">
         <div class="mainContainer">
@@ -77,7 +93,7 @@
 
                 <div class="profile-description">
 
-                    <ul class="Description-list">                              
+                    <ul class="Description-list">
                         <li style="margin-bottom: 6px;">
                             <span class="userName">Subham dey</span>
                         </li>
@@ -98,16 +114,16 @@
                         </li>
                     </ul>
 
-                        <div class="post-reels-tagged" style="margin-top: 10px;">
-                            <span>Posts</span>
-                            <span>Reels</span>
-                            <span>Tagged</span>
-                        </div>
+                    <div class="post-reels-tagged" style="margin-top: 10px;">
+                        <span>Posts</span>
+                        <span>Reels</span>
+                        <span>Tagged</span>
+                    </div>
 
-                            <b>
-                                <center style="margin: 10px 0px 0px 0px">Hover to see enlarged image</center>
-                            </b>
-                    
+                    <b>
+                        <center style="margin: 10px 0px 0px 0px">Hover to see enlarged image</center>
+                    </b>
+
                     <div class="gallary">
                         <img src="images/post1_img.jpg" alt="">
                         <img src="images/humming_bird.webp" alt="">
@@ -123,7 +139,7 @@
 <script>
     const popup_close = document.querySelector(".popup-close");
 
-    popup_close.addEventListener('click', ()=> {
+    popup_close.addEventListener('click', () => {
         window.close();
     })
 
