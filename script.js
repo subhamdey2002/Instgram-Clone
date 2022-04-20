@@ -36,7 +36,13 @@ fetch("insta-clone.json")
                         <span id="desc"></span>
                     </p>
                     <!-- <button>Read more</button> -->
-                    <p class="comments">view all comments</p>
+                    
+                    <p><span class="comments">
+                    <span><b>Rahul</b>  Nice pic dear</span>
+                    <span><b>Nitin</b>  Great !!</span>
+                    <span><b>Mukesh</b>WOW !! </span>
+
+                    <br>view all comments</span></p>
                     <p class="postTime">56 minustes ago</p>
                     <hr>
                     <div class="commentSection">
@@ -46,7 +52,7 @@ fetch("insta-clone.json")
                 </div>
             </div>`
 
-        for (let index = 0; index < 8; index++) {
+        for (let index = 0; index < data.posts.length; index++) {
 
 
             feed_div.innerHTML += post_div;
@@ -99,18 +105,18 @@ fetch("insta-clone.json")
         }
 
         const follow_btns = document.querySelectorAll(".follow-btn");
-        
+
 
         follow_btns.forEach(element => {
             element.addEventListener('click', () => {
-               element.classList.toggle("true");
+                element.classList.toggle("true");
 
-               if(element.classList.contains("true")) {
-                   element.innerText = `Unfollow -`;
-               }
-               else {
+                if (element.classList.contains("true")) {
+                    element.innerText = `Unfollow -`;
+                }
+                else {
                     element.innerText = `Follow +`;
-               }
+                }
             })
         });
 
@@ -156,17 +162,17 @@ fetch("insta-clone.json")
             element.addEventListener('click', () => {
                 popup.classList.remove("hidden");
 
-                let index = data.users.findIndex( function(object){
+                let index = data.users.findIndex(function (object) {
                     // console.log();
                     return object.userId === element.innerText;
                 });
                 console.log(index)
-                if(index === -1) {
+                if (index === -1) {
                     popup.innerHTML = `<i class="far fa-times-circle popup-close" id="popup-close"></i><span>No Details Avilable about user</span>`;
                     popup.classList.toggle("empty");
                 }
                 else {
-                popup.innerHTML = `            <i class="far fa-times-circle popup-close" id="popup-close"></i>
+                    popup.innerHTML = `            <i class="far fa-times-circle popup-close" id="popup-close"></i>
 
                     <div class="profileHeader">
                         <div class="profile-pic-name">
@@ -187,46 +193,67 @@ fetch("insta-clone.json")
                             </div>
                         </div>
                     </div>
-        
+                    
+                    <div class="popup-btns">
+                    <button class="popup-follow-btn">Follow</button>
+                    <button class="popup-follow-btn">Messege</button>
+                    </div>
+
                     <div class="profile-description">
         
-                        <ul>
-                            <li>
-                                <span class="userName">${data.users[index].userName}</span>
-                            </li>
-                            <li>
-                                Actor
-                            </li>
-                            <li>
-                                Animal lover
-                            </li>
-                            <li>
-                                World Travellor
-                            </li>
-                            <li>
-                                Emial: sd918782@gmail.com
-                            </li>
-                            <li>
-                                linkin: Subham_dey@demoID
-                            </li>
-                            <li>
-                                <b><center style="margin: 10px 0px 0px 0px">Hover to see enlarged image</center></b>
-                            </li>
-                        </ul> 
+                            <ul class="Description-list">                              
+                            </ul>
+
+                            <div class="post-reels-tagged">
+                                <span class="active">Posts</span>
+                                <span class="">Reels</span>
+                                <span class="">Tagged</span>
+                            </div>
+            
+                            <b>
+                                <center style="margin: 10px 0px 0px 0px;">Hover to see enlarged image</center>
+                            </b>
+           
                             <div class="gallary">
                             </div>
                     </div>`;
 
                     let GallaryDiv = popup.getElementsByClassName("gallary")[0];
+                    let Description_list = popup.querySelector(".Description-list");
+
+                    Description_list.innerHTML += `<li style=" margin-bottom: 6px;">
+                                                    <span class="userName">${data.users[index].userName}</span>
+                                                    </li>`;
                     
-
-
-                        for(let i=0; i<`${data.users[index].PostGallary.length}`; i++) {
-
-                            GallaryDiv.innerHTML += `<img src="${data.users[index].PostGallary[i]}" alt="">`;
-                        }
-
+                    // console.log(`${data.users[index].Description.length}`);
+                    for (let i = 0; i < `${data.users[index].Description.length}`; i++) {
+                        const item = document.createElement('li');
+                        item.innerText = `${data.users[index].Description[i]}`
+                        Description_list.appendChild(item)
+                        
                     }
+
+    let popup_follow_btn = popup.querySelectorAll(".popup-follow-btn")[0];
+    let followed = false;
+
+    popup_follow_btn.addEventListener('click', ()=> {
+            console.log("clicked");
+        if(!followed)
+            {popup_follow_btn.innerText = "Unfollow";
+            followed = true;}
+            else
+            {popup_follow_btn.innerText = "Follow"; 
+            followed = false;}
+            
+        })
+
+
+                    for (let i = 0; i < `${data.users[index].PostGallary.length}`; i++) {
+
+                        GallaryDiv.innerHTML += `<img src="${data.users[index].PostGallary[i]}" alt="">`;
+                    }
+
+                }
 
                 mainContainer.classList.add("blured");
 
