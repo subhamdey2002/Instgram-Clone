@@ -161,20 +161,85 @@ body {
     box-shadow: 10px 10px 15px #999;
     overflow-x: hidden;
     overflow-y: scroll ;
+    font-family: 'outfit', sans-serif;
 }
+.main .popup .popup-btns{
+    position: absolute;
+    width: calc(50%);
+    top: 120px;
+    left: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 100;
+}
+.main .popup .popup-btns button{
+    padding: 5px 20px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    border: 1px solid rgb(44,123,251);
+    border-radius: 4px;
+    background-color: rgb(93, 145, 227, 1);
+    color: white;
+    font-size: .8rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main .popup .popup-btns button:hover{
+    background-color: rgb(69, 120, 203);
+}
+
+.main .popup .post-reels-tagged{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    position: relative;
+    /* background-color: red; */
+}
+
+.main .popup  .post-reels-tagged > * {
+    cursor: pointer;
+    position: inherit;
+}
+
+.post-reels-tagged > span::after {
+    content: '';
+    background-color: rgb(69, 120, 203);
+    display: none;
+    width: 100px;
+    height: 2px;
+    border-radius: 4px;
+    position: absolute;
+    top: 20px;
+    left: -25px;
+}
+
+.post-reels-tagged > span:hover:after {
+    display: block;
+}
+
+
 
 .main .popup .gallary {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 10px;
+    height: max-content;
 }
 
 .main .popup .gallary img {
+    max-height: 150px;
     width: calc((100% / 3) - 4px );
     border-radius: 3px;
+    background-color: whitesmoke;
     cursor: pointer;
     margin: 2px 2px;
+    object-fit: cover;
     transition: all 0.3s ease-in-out;
 }
 
@@ -201,7 +266,8 @@ body {
     right: 10px;
     color: #898988;
     font-size: 1.75rem;
-    transition: all 0.05s linear;
+    z-index: 100;
+    transition:all 0.5s linear ;
 }
 
 .main .popup .popup-close:hover{
@@ -217,6 +283,11 @@ body {
     display: flex;
     align-items: center;
     top: 20px;
+}
+
+.popup ul {
+    display: inline-block;
+    width: max-content;
 }
 
 .main .popup .profileHeader .profile-pic-name {
@@ -286,6 +357,10 @@ body {
 .storydiv{
     position: relative;
     margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit';
 }
 
 .stories .story img {
@@ -309,10 +384,6 @@ body {
 
 .storydiv .userId {
     color: black;
-    position: absolute;
-    bottom: -17px;
-    left: 17px;
-    margin: 0px auto;
 }
 
 
@@ -418,6 +489,10 @@ body {
     margin: 5px 0px;
 }
 
+.postDetails .comments {
+    cursor: pointer;
+}
+
 .commentSection {
     display: flex;
 }
@@ -459,7 +534,7 @@ body {
 }
 
 .post .like .fas {
-    color: #c200a1;
+    color: #0b82dc;
 }
 
 
