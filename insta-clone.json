@@ -1,214 +1,395 @@
 {
-   "posts":[
+    "posts": [
         {
-            "user_name" : "Subham dey",
-            "user_Id" : "Subham dey001",
-            "profilepic" : "images/user1.webp",
-            "postimg" : "images/post1_img.jpg",
+            "user_name": "Subham dey",
+            "user_Id": "Subham dey001",
+            "profilepic": "images/user1.webp",
+            "postimg": "images/coding.avif",
+            "description": "I took a lot of time, this project !😢",
+            "likes": 1045,
+            "post_time": "1",
+            "saved": false
+        },
+        {
+            "user_name": "Yash_raj",
+            "user_Id": "Wild_Yash",
+            "profilepic": "images/user7.jpeg",
+            "postimg": "images/fox.webp",
+            "description": "what does the fox says ?",
+            "likes": 457,
+            "post_time": "10",
+            "saved": false
+        },
+        {
+            "user_name": "Subham dey",
+            "user_Id": "Subham dey001",
+            "profilepic": "images/user1.webp",
+            "postimg": "images/post1_img.jpg",
             "description": " “Happiness is not at the top of the mountains but in how to climb it.”",
             "likes": 122,
-            "newlikes" : 123,
-            "post_time":"12",
+            "post_time": "12",
             "saved": false
         },
         {
-            "user_name" : "Manoj O.",
-            "user_Id" : "Manoj002",
-            "profilepic" : "images/user2.jpeg",
-            "postimg" : "images/post2_img.jpg",
+            "user_name": "Manoj O.",
+            "user_Id": "Manoj002",
+            "profilepic": "images/user2.jpeg",
+            "postimg": "images/post2_img.jpg",
             "description": " “Life was meant for great adventures and close friends.”",
             "likes": 140,
-            "post_time":"46",
+            "post_time": "46",
             "saved": false
         },
         {
-            "user_name" : "Raj Yadav",
-            "user_Id" : "yadav_raj_69",
-            "profilepic" : "images/raj_dp.jpg",
-            "postimg" : "images/post3_img.jpg",
+            "user_name": "Raj Yadav",
+            "user_Id": "yadav_raj_69",
+            "profilepic": "images/raj_dp.jpg",
+            "postimg": "images/post3_img.jpg",
             "description": "“Forests are the world's air-conditioning system.”",
             "likes": 80,
-            "post_time":"65",
+            "post_time": "65",
             "saved": false
         },
         {
-            "user_name" : "Jhuma Paul",
-            "user_Id" : "Jhuma004",
-            "profilepic" : "images/user6.webp",
-            "postimg" : "images/post4_img.jpg",
+            "user_name": "Jhuma Paul",
+            "user_Id": "Jhuma004",
+            "profilepic": "images/user6.webp",
+            "postimg": "images/post4_img.jpg",
             "description": "What does the fox say?",
             "likes": 209,
-            "post_time":"71",
+            "post_time": "71",
             "saved": false
-        },        
+        },
         {
-            "user_name" : "Priya kumari",
-            "user_Id" : "Angel004",
-            "profilepic" : "images/user5.webp",
-            "postimg" : "images/post5_img.jpg",
+            "user_name": "Priya kumari",
+            "user_Id": "Angel004",
+            "profilepic": "images/user5.webp",
+            "postimg": "images/post5_img.jpg",
             "description": "&#x2764&#x2764&#x2764&#x2764",
             "likes": 190,
-            "post_time":"90",
+            "post_time": "90",
             "saved": false
-        },        
+        },
         {
-            "user_name" : "Yash_raj",
-            "user_Id" : "Wild_Yash",
-            "profilepic" : "images/user7.jpeg",
-            "postimg" : "images/post6_img.jpg",
+            "user_name": "Yash_raj",
+            "user_Id": "Wild_Yash",
+            "profilepic": "images/user7.jpeg",
+            "postimg": "images/post6_img.jpg",
             "description": "Beautiful Wild...&#x2764&#x2764",
             "likes": 320,
-            "post_time":"140",
+            "post_time": "140",
             "saved": false
         },
         {
-            "user_name" : "Vishal karmakar",
-            "user_Id" : "I_am_Vicky",
-            "profilepic" : "images/user4.webp",
-            "postimg" : "images/post7_img.jpg",
+            "user_name": "Purushottam Mahapatro",
+            "user_Id": "JBG_manpuru",
+            "profilepic": "images/user12.jpg",
+            "postimg": "images/rabbit.webp",
+            "description": ".webp is better than .jpg or .jpeg !",
+            "likes": 56,
+            "post_time": "250",
+            "saved": false
+        },
+        {
+            "user_name": "Jhuma Paul",
+            "user_Id": "Jhuma004",
+            "profilepic": "images/user6.webp",
+            "postimg": "images/lama.webp",
+            "description": "I cannot think of any caption for this! 🤔🤔",
+            "likes": 1245,
+            "post_time": "420",
+            "saved": false
+        },
+        {
+            "user_name": "Yash_raj",
+            "user_Id": "Wild_Yash",
+            "profilepic": "images/user7.jpeg",
+            "postimg": "images/Elephant.webp",
+            "description": "SOIL bath 😜",
+            "likes": 1405,
+            "post_time": "430",
+            "saved": false
+        },
+        {
+            "user_name": "Vishal karmakar",
+            "user_Id": "I_am_Vicky",
+            "profilepic": "images/user4.webp",
+            "postimg": "images/user6.webp",
+            "description": "sorry for quality !!😥😥",
+            "likes": 345,
+            "post_time": "440",
+            "saved": false
+        },
+        {
+            "user_name": "Subham dey",
+            "user_Id": "Subham dey001",
+            "profilepic": "images/user1.webp",
+            "postimg": "images/humming_bird.webp",
+            "description": "I am tired of captioning !",
+            "likes": 122,
+            "post_time": "12",
+            "saved": false
+        },
+        {
+            "user_name": "Vishal karmakar",
+            "user_Id": "I_am_Vicky",
+            "profilepic": "images/user4.webp",
+            "postimg": "images/post7_img.jpg",
             "description": "NO CAPTION",
             "likes": 143,
-            "post_time":"124",
+            "post_time": "124",
             "saved": false
         },
         {
-            "user_name" : "Manohar Batra",
-            "user_Id" : "Manohar_Batra",
-            "profilepic" : "images/user16.jpg",
-            "postimg" : "images/post8_img.jpg",
+            "user_name": "Manohar Batra",
+            "user_Id": "Manohar_Batra",
+            "profilepic": "images/user16.jpg",
+            "postimg": "images/post8_img.jpg",
             "description": "Being kidish!!",
             "likes": 399,
-            "post_time":"135",
+            "post_time": "135",
+            "saved": false
+        },
+        {
+            "user_name": "Yash_raj",
+            "user_Id": "Wild_Yash",
+            "profilepic": "images/user7.jpeg",
+            "postimg": "images/crans.webp",
+            "description": "wild love !",
+            "likes": 947,
+            "post_time": "670",
+            "saved": false
+        },
+        {
+            "user_name": "Jhuma Paul",
+            "user_Id": "Jhuma004",
+            "profilepic": "images/user6.webp",
+            "postimg": "images/lioness.webp",
+            "description": "🦁🐱",
+            "likes": 2309,
+            "post_time": "560",
+            "saved": false
+        },
+        {
+            "user_name": "Manoj O.",
+            "user_Id": "Manoj002",
+            "profilepic": "images/user2.jpeg",
+            "postimg": "images/user2.jpeg",
+            "description": "Hey there i am using Instagram clone.",
+            "likes": 2,
+            "post_time": "500",
             "saved": false
         }
+    ],
+    "suggetions": [
+        {
+            "user_name": "Supriya kumari",
+            "user_Id": "superRIA",
+            "profilepic": "images/user15.jpeg"
+        },
+        {
+            "user_name": "Rajnish Pandey",
+            "user_Id": "Rajnesh101",
+            "profilepic": "images/user14.jpg"
+        },
+        {
+            "user_name": "Yashraj Kubhkar",
+            "user_Id": "YashRAJ_Arts",
+            "profilepic": "images/user13.jpg"
+        },
+        {
+            "user_name": "Anshu Rajpoot",
+            "user_Id": "Rajpoot_Anshu",
+            "profilepic": "images/user12.jpg"
+        },
+        {
+            "user_name": "Priyanka Banerjee",
+            "user_Id": "PriyankaB.",
+            "profilepic": "images/user11.jpg"
+        },
+        {
+            "user_name": "Josef pol",
+            "user_Id": "JOSEF",
+            "profilepic": "images/user10.jpg"
+        },
+        {
+            "user_name": "Andrew Meghan",
+            "user_Id": "Meghan_Andrew",
+            "profilepic": "images/user9.jpg"
+        },
+        {
+            "user_name": "Supriya kumari",
+            "user_Id": "superRIA",
+            "profilepic": "images/user15.jpeg"
+        },
+        {
+            "user_name": "Supriya kumari",
+            "user_Id": "superRIA",
+            "profilepic": "images/user15.jpeg"
+        },
+        {
+            "user_name": "Supriya kumari",
+            "user_Id": "superRIA",
+            "profilepic": "images/user15.jpeg"
+        }
+    ],
+    "users": [
+        {
+            "userId": "Subham dey001",
+            "userName": "Subham dey",
+            "profilePic": "images/user1.webp",
+            "followers": "340 B",
+            "follows": "124",
+            "posts": "4",
+            "Description" :[
+                "9th August 2002",
+                "Coder",
+                "Movie lover",
+                "Email: sd918782@gmail.com",
+                "LinkedIn: subham_dey"
+            ],
+            "PostGallary": [
+                "images/post1_img.jpg",
+                "images/humming_bird.webp",
+                "images/coding.avif",
+                "images/instagram-logo-img.avif"
 
-   ],
+            ]
+        },
+        {
+            "userId": "I_am_Vicky",
+            "userName": "Rajat dey",
+            "profilePic": "images/user4.webp",
+            "followers": "100",
+            "follows": "50",
+            "posts": "9",
+            "Description" :[
+                "Dancer",
+                "Blogger",
+                "Email: vicky123@gmail.com",
+                "LinkedIn: Rajat_dey"
+            ],
+            "PostGallary": [
+                "images/user1.webp",
+                "images/user3.webp",
+                "images/user4.webp",
+                "images/user5.webp",
+                "images/user6.webp",
+                "images/user10.jpg"
+            ]
+        },
+        {
+            "userId": "Wild_Yash",
+            "userName": "Yashraj Kumbhkar",
+            "profilePic": "images/user7.jpeg",
+            "followers": "1.54 M",
+            "follows": "345",
+            "posts": "4",
+            "Description" :[
+                "Sketch Artist",
+                "Whild Photografer",
+                "Gamer",
+                "Email: yashraj123@gmail.com",
+                "LinkedIn: YashRaj_Kumbhakar"
+            ],
+            "PostGallary": [
+                "images/fox.webp",
+                "images/crans.webp",
+                "images/post6_img.jpg",
+                "images/elephant.webp"
+            ]
+        },
+        {
+            "userId": "JBG_manpuru",
+            "userName": "Purushottam",
+            "profilePic": "images/user3.webp",
+            "followers": "450",
+            "follows": "360",
+            "posts": "1",
+            "Description" :[
+                "Wish me on 30tn feb",
+                "Manpuru",
+                "Email: manpuru123@yahoo.com",
+                "LinkedIn: purushottam_mahapatro"
+            ],
+            "PostGallary": [
+                "images/rabbit.webp"
+            ]
+        },
+        {
+            "userId": "Manoj002",
+            "userName": "Manoj O.",
+            "profilePic": "images/user2.jpeg",
+            "followers": "5689",
+            "follows": "340",
+            "posts": "2",
+            "Description" :[
+                "Actor",
+                "Coder",
+                "Email: sd918782@gmail.com",
+                "LinkedIn: subham_dey"
+            ],
+            "PostGallary": [
+                "images/post2_img.jpg",
+                "images/user2.jpeg"
 
-   "suggetions":[                                                                                                                                                                                                                   
-    {
-        "user_name" : "Supriya kumari",
-        "user_Id" : "superRIA",
-        "profilepic" : "images/user15.jpeg"
-    },
-    {
-        "user_name" : "Rajnish Pandey",
-        "user_Id" : "Rajnesh101",
-        "profilepic" : "images/user14.jpg"
-    },
-    {
-        "user_name" : "Yashraj Kubhkar",
-        "user_Id" : "YashRAJ_Arts",
-        "profilepic" : "images/user13.jpg"
-    },
-    {
-        "user_name" : "Anshu Rajpoot",
-        "user_Id" : "Rajpoot_Anshu",
-        "profilepic" : "images/user12.jpg"
-    },
-    {
-        "user_name" : "Priyanka Banerjee",
-        "user_Id" : "PriyankaB.",
-        "profilepic" : "images/user11.jpg"
-    },
-    {
-        "user_name" : "Josef pol",
-        "user_Id" : "JOSEF",
-        "profilepic" : "images/user10.jpg"
-    },
-    {
-        "user_name" : "Andrew Meghan",
-        "user_Id" : "Meghan_Andrew",
-        "profilepic" : "images/user9.jpg"
-    },
-    {
-        "user_name" : "Supriya kumari",
-        "user_Id" : "superRIA",
-        "profilepic" : "images/user15.jpeg"
-    },
-    {
-        "user_name" : "Supriya kumari",
-        "user_Id" : "superRIA",
-        "profilepic" : "images/user15.jpeg"
-    },
-    {
-        "user_name" : "Supriya kumari",
-        "user_Id" : "superRIA",
-        "profilepic" : "images/user15.jpeg"
-    }
-   ],
-
-   "users": [
-            {
-                "userId":"Subham dey001",
-                "userName": "Subham dey",
-                "profilePic":"images/user1.webp",
-                "followers":"456",
-                "follows":"124",
-                "posts":"9",
-                "PostGallary": [
-                    "images/post7_img.jpg",
-                    "images/post8_img.jpg",
-                    "images/post1_img.jpg",
-                    "images/post2_img.jpg",
-                    "images/post3_img.jpg",
-                    "images/post4_img.jpg",
-                    "images/post5_img.jpg",
-                    "images/post6_img.jpg",
-                    "images/post7_img.jpg"
-                ]
-            },
-            {
-                "userId":"I_am_Vicky",
-                "userName": "Rajat dey",
-                "profilePic":"images/user9.jpg",
-                "followers":"100",
-                "follows":"50",
-                "posts":"9",
-                "PostGallary": [
-                    "images/user1.webp",
-                    "images/user3.webp",
-                    "images/user4.webp",
-                    "images/user5.webp",
-                    "images/user6.webp",
-                    "images/user7.jpeg",
-                    "images/user8.jpeg",
-                    "images/user9.jpg",
-                    "images/user10.jpg"
-                ]
-            },
-            {
-                "userId":"Wild_Yash",
-                "userName": "Yashraj Kumbhkar",
-                "profilePic":"images/user7.jpeg",
-                "followers":"349",
-                "follows":"345",
-                "posts":"7",
-                "PostGallary": [
-                    "images/lama.webp",
-                    "images/elephant.webp",
-                    "images/lioness.webp",
-                    "images/humming_bird.webp",
-                    "images/fox.webp",
-                    "images/crans.webp",
-                    "images/post6_img.jpg"
-                ]
-            },
-            {
-                "userId":"Jhuma004",
-                "userName": "Jhumma Paul",
-                "profilePic":"images/user6.webp",
-                "followers":"349",
-                "follows":"345",
-                "posts":"7",
-                "PostGallary": [
-                    "images/lama.webp",
-                    "images/elephant.webp",
-                    "images/lioness.webp",
-                    "images/humming_bird.webp",
-                    "images/fox.webp",
-                    "images/crans.webp",
-                    "images/post6_img.jpg"
-                ]
-            }
-   ]
+            ]
+        },
+        {
+            "userId": "yadav_raj_69",
+            "username": "Raj Yadav",
+            "profilepic": "images/raj_dp.jpg",
+            "followers": "1242",
+            "follows":"2322",
+            "posts":"3",
+            "Description" :[
+                "Actor",
+                "Coder",
+                "Email: sd918782@gmail.com",
+                "LinkedIn: subham_dey"
+            ],
+            "PostGallary":[
+                "images/social-media.avif",
+                "images/raj_dp.jpg",
+                "images/jungle-bridge.avif"
+            ]
+        },
+        {
+            "userId": "Angel004",
+            "username": "Priya kumari",
+            "profilepic": "images/user5.webp",
+            "followers": "450",
+            "follows":"1456",
+            "posts":"2",
+            "Description" :[
+                "Actor",
+                "Coder",
+                "Email: sd918782@gmail.com",
+                "LinkedIn: subham_dey"
+            ],
+            "PostGallary":[
+                "images/camping.avif",
+                "images/paper-work.avif"
+            ]
+        },
+        {
+            "userId": "Jhuma004",
+            "userName": "Jhumma Paul",
+            "profilePic": "images/user6.webp",
+            "followers": "349",
+            "follows": "345",
+            "posts": "3",
+            "Description" :[
+                "Actor",
+                "Coder",
+                "Email: sd918782@gmail.com",
+                "LinkedIn: subham_dey"
+            ],
+            "PostGallary": [
+                "images/lama.webp",
+                "images/lioness.webp",
+                "images/post4_img.jpg"
+            ]
+        }
+    ]
 }
