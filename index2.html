@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/49e764df9c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png"
+    type="image/x-icon">
+    <title>Instgram-Clone/User Profile</title>
+</head>
+
+<body>
+
+            <div class="nav">
+                <nav class="navBar">
+        
+                    <i class="fas fa-camera"></i>
+        
+                    <div class="logo">
+                        <a href="index.html"><i class="fab fa-instagram"></i></a>
+                        <img src="images/instaclone-logo-dark.png" alt="brand-png">
+                    </div>
+        
+                    <i class="fab fa-facebook-messenger"></i>
+        
+                    <div class="searchBox">
+                        <input type="text" placeholder="Search...">
+                        <i class="fas fa-search"></i>
+                    </div>
+        
+                    <div class="navIcons">
+                        <ul class="Icons">
+                            <li><i class="fas fa-home home"></i></li>
+                            <li><i class="fab fa-facebook-messenger messenger"></i></li>
+                            <li><i class="fas fa-plus-square addpost"></i></li>
+                            <li><i class="fas fa-heart fav"></i></li>
+                            <a href="index2.html"><li><i class="fas fa-user"></i></li></a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+    <div class="main">
+        <div class="mainContainer">
+            <div class="popup" id="popup">
+                <i class="far fa-times-circle popup-close" id="popup-close" onclick="`${window.close()}`"></i>
+
+                <div class="profileHeader">
+                    <div class="profile-pic-name">
+                        <img src="images/user1.webp" alt="ProfilePictureHere">
+                    </div>
+                    <div class="follower-follow-post">
+                        <div class="userCredentials">
+                            <span class="followers-count">340 B</span>
+                            <span>Followers</span>
+                        </div>
+                        <div class="userCredentials">
+                            <span class="follows-count">456</span>
+                            <span>Follows</span>
+                        </div>
+                        <div class="userCredentials">
+                            <span class="post-count">3</span>
+                            <span>Posts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-btns">
+                    <button>Follow</button>
+                    <button>Messege</button>
+                </div>
+
+                <div class="profile-description">
+
+                    <ul class="Description-list">                              
+                        <li style="margin-bottom: 6px;">
+                            <span class="userName">Subham dey</span>
+                        </li>
+                        <li>
+                            9th August 2002
+                        </li>
+                        <li>
+                            Coder
+                        </li>
+                        <li>
+                            Movie lover
+                        </li>
+                        <li>
+                            Emial: sd918782@gmail.com
+                        </li>
+                        <li>
+                            linkin: subham_dey
+                        </li>
+                    </ul>
+
+                        <div class="post-reels-tagged" style="margin-top: 10px;">
+                            <span>Posts</span>
+                            <span>Reels</span>
+                            <span>Tagged</span>
+                        </div>
+
+                            <b>
+                                <center style="margin: 10px 0px 0px 0px">Hover to see enlarged image</center>
+                            </b>
+                    
+                    <div class="gallary">
+                        <img src="images/post1_img.jpg" alt="">
+                        <img src="images/humming_bird.webp" alt="">
+                        <img src="images/coding.avif" alt="">
+                        <img src="images/instagram-logo-img.avif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const popup_close = document.querySelector(".popup-close");
+
+    popup_close.addEventListener('click', ()=> {
+        window.close();
+    })
+
+</script>
+
+</html>
